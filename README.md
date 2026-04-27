@@ -27,6 +27,7 @@ Teacher-only actions (require Authorization: Bearer <token>)
 - GET /api/submissions/:assignmentId
 - GET /api/submissions/:id/download
 - POST /api/submissions/:id/grade { grade, feedback }
+- GET /api/health  // simple health check endpoint
 
 Student actions
 - GET /api/courses  // lists courses assigned to the logged-in student
@@ -38,3 +39,12 @@ Notes
 
 - Files are stored in MongoDB as binary blobs in the `Submission` document for simplicity. For production you should use S3 or GridFS.
 - Keep your `.env` secret and don't commit it.
+
+Vercel deployment
+
+- This repo is configured for Vercel Serverless Functions via `api/index.js` and `vercel.json`.
+- Set these Project Environment Variables in Vercel before deploying:
+   - `MONGODB_URI`
+   - `JWT_SECRET`
+   - `FRONTEND_ORIGIN` (your frontend URL)
+
