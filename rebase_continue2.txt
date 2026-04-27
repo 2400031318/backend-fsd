@@ -1,0 +1,6 @@
+[detached HEAD 34af4ac] Fix Vercel serverless deployment and add health endpoint
+ 5 files changed, 111 insertions(+), 41 deletions(-)
+ create mode 100644 api/index.js
+ create mode 100644 src/app.js
+ create mode 100644 vercel.json
+Successfully rebased and updated refs/heads/main.

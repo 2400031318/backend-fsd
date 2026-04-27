@@ -1,5 +1,6 @@
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const serverless = require('serverless-http');
 const app = require('../src/app');
 
 dotenv.config();
@@ -23,12 +24,14 @@ async function ensureMongoConnection() {
   await connectionPromise;
 }
 
-module.exports = async (req, res) => {
+app.use(async (req, res, next) => {
   try {
     await ensureMongoConnection();
-    return app(req, res);
+    next();
   } catch (err) {
-    console.error('Serverless invocation failed:', err);
-    return res.status(500).json({ message: 'Internal server error' });
+    console.error('MongoDB connection failed:', err);
+    res.status(500).json({ message: 'Database connection failed' });
   }
-};
+});
+
+module.exports = serverless(app);

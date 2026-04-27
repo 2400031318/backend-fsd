@@ -1,0 +1,30 @@
+Vim: Warning: Output is not to a terminal
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "~/Downloads/backend-fsd-main/backend-fsd-main/.g
+[29;80Hi[30;1Ht/.COMMIT_EDITMSG.swp"
+[10Cowned by: Dell   dated: Mon Apr 27 12:39:55 2026
+[9Cfile name: ~Dell/Downloads/backend-fsd-main/backend-fsd-main/.git/COMM
+[29;80HI[30;1HT_EDITMSG
+[10Cmodified: YES
+[9Cuser name: Dell   host name: DESKTOP-05B7QJI
+[8Cprocess ID: 1440 (STILL RUNNING)
+While opening file "/c/Users/Dell/Downloads/backend-fsd-main/backend-fsd-main/.
+[29;80Hg[30;1Hit/COMMIT_EDITMSG"
+[13Cdated: Mon Apr 27 12:41:45 2026
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /c/Users/Dell/Downloads/back
+[29;80He[30;1Hnd-fsd-main/backend-fsd-main/.git/COMMIT_EDITMSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/c/Users/Dell/Downloads/back
+[29;80He[30;1Hnd-fsd-main/backend-fsd-main/.git/.COMMIT_EDITMSG.swp"
+    to avoid this message.
+
+[32mSwap file "~/Downloads/backend-fsd-main/backend-fsd-main/.git/.COMMIT_EDITMSG.s[m
+[29;80H[32mw[30;1Hp" already exists![m
+[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: [?25herror: could not commit staged changes.
+^C
